@@ -1,0 +1,130 @@
+.contacts {
+        padding: 120px 0 90px 0;
+
+        &__title {
+                position: relative;
+                padding-left: 15px;
+                @include before_circle;
+        }
+
+        &__wrapper {
+                padding: 0 35px 0 52px;
+                display: grid;
+                grid-template-columns: 400px 585px;
+                justify-content: space-between;
+        }
+
+
+        &__photo {
+                img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                }
+        }
+
+        &__descr {}
+
+        .divider {
+                margin: 0;
+        }
+
+        &__text {
+                margin-top: 20px;
+        }
+
+        &__social {
+                margin-top: 20px;
+
+                &:last-child {
+                        margin-right: 0;
+                }
+        }
+
+        &__link {
+                margin-right: 10px;
+
+                img {
+                        height: 30px;
+                        width: 30px;
+                }
+        }
+
+        &__form {
+                margin-top: 30px;
+                display: grid;
+                grid-template-rows: 45px 190px 45px;
+                grid-template-columns: 280px 280px;
+                justify-content: space-between;
+                align-content: space-between;
+                column-gap: 25px;
+                row-gap: 27px;
+        }
+
+        &__input {
+                position: relative;
+
+        }
+
+        input {
+
+                height: 100%;
+                width: 100%;
+                padding: 0 20px;
+                font-size: 12px;
+        }
+
+        label {
+                position: absolute;
+                display: block;
+                height: 18px;
+                padding: 0 8px;
+                background: #fff;
+                font-size: 12px;
+                top: -9px;
+                left: 12px;
+                margin-bottom: 0;
+        }
+
+        &__textarea {
+                position: relative;
+                grid-row: 2 / 3;
+                grid-column: 1 / 3;
+
+                textarea {
+                        width: 100%;
+                        height: 100%;
+                        resize: none;
+                        padding: 20px;
+                        font-size: 12px;
+                }
+        }
+
+        &__triggers {
+                grid-column: 1 / 3;
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+
+        }
+
+        &__policy {
+                font-size: 12px;
+                line-height: 16px;
+                align-self: center;
+
+                input {
+                        height: 11px;
+                        width: 11px;
+                        margin-right: 10px;
+                }
+        }
+
+
+        &__btn {
+                font-size: 14px;
+                font-weight: 700;
+                border: none;
+
+                grid-row: 3 / 4;
+        }
+}

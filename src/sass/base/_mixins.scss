@@ -1,0 +1,43 @@
+@mixin hover__links {
+        &:hover {
+                color: #000000;
+                text-decoration: none;
+        }
+}
+
+@mixin before_circle {
+        &::before {
+                content: '';
+                position: absolute;
+                top: -25%;
+                left: 0;
+                height: 36px;
+                width: 36px;
+                border-radius: 100%;
+                background: $main-color;
+                z-index: -1;
+        }
+}
+
+@mixin before_circle-center {
+        @include before_circle;
+
+        &:before {
+                top: -6px;
+                left: 50%;
+                transform: translateX(-50%);
+        }
+}
+
+@mixin title_fz-mobile {
+        .title {
+                &_fz36 {
+                        font-size: 24px;
+                        line-height: 60px;
+                }
+
+                &_fz48 {
+                        font-size: 28px;
+                }
+        }
+}

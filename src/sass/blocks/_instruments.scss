@@ -1,0 +1,27 @@
+.instruments {
+        padding: 120px 0;
+
+        &__wrapper {
+                padding: 0 15px;
+                display: grid;
+                grid-template-columns: repeat(4, minmax(270px, auto));
+                grid-template-rows: repeat(2, minmax(270px, auto));
+                margin-top: 60px;
+                column-gap: 15px;
+                row-gap: 15px;
+        }
+
+        &__item {
+                padding: 30px 30px 25px;
+                border: 1px solid #000;
+        }
+
+        &__img {
+                margin-bottom: 20px;
+        }
+
+        &__title {
+                margin-bottom: 15px;
+                font-weight: 700;
+        }
+}
